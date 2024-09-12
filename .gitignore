@@ -160,3 +160,50 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+# Arquivos bytecode do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de log do Django
+*.log
+
+# Configurações locais do Django (não devem ser versionadas)
+local_settings.py
+
+# Diretório do ambiente virtual (venv)
+venv/
+env/
+.env
+
+# Arquivos gerados pelo PyCharm
+.idea/
+
+# Arquivos de banco de dados SQLite (se aplicável)
+*.sqlite3
+
+# Diretório de mídia (se aplicável)
+media/
+
+# Outros arquivos temporários ou gerados automaticamente
+*.pid
+*.lock
+*.tmp
+
+# Arquivos de build e distribuição
+dist/
+build/
+
+# Arquivos de cobertura de testes
+.coverage
+htmlcov/
+
+# Arquivos de documentação gerados
+docs/_build/
+
+#ignorar pasta venv
+django_env/
