@@ -11,4 +11,8 @@ class PessoaCreateView(CreateView):
     template_name = 'cadastrar_pessoa.html'
     success_url = reverse_lazy('lista_pessoas')
 
+
+class PessoaListView(ListView):
+    model = Pessoa 
+    template_name = 'lista_pessoas.html'
 # Create your views here.
