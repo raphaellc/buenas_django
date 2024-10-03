@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 from django.http import HttpResponse
 
 def buenasDjango(request):
@@ -23,5 +23,6 @@ def buenasDjango(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('BuenasDjango/',buenasDjango)
+    path('BuenasDjango/',buenasDjango),
+    path('primeiroCrud/', include('primeiroCrud.urls'))
 ]
