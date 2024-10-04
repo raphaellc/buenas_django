@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, ListView, UpdateView, DetailView
+from django.views.generic import CreateView, ListView
 from .models import Pessoa
-from .forms import PessoaCreateForm, PessoaUpdateForm 
+from .forms import PessoaCreateForm 
 # Create your views here.
 #criação da tela de cadastro de pessoa
 class PessoaCreateView(CreateView):
