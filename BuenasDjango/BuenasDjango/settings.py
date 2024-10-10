@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'primeiroCrud.apps.PrimeirocrudConfig',
     'segundoCrud',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

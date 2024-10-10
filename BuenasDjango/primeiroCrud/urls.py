@@ -1,13 +1,10 @@
 from django.urls import path
 from django.http import HttpResponse
 from .views import PessoaCreateView, PessoaListView
- 
+from rest_framework import routers
+from .views import PessoaViewSet
 
-def primeiroCrud(request):
-    return HttpResponse('Primeiro App')
+router = routers.DefaultRouter()
+router.register(r'pessoas', PessoaViewSet)
 
-urlpatterns = [
-    path('',primeiroCrud),
-    path('cadastrar_pessoa/', PessoaCreateView.as_view(), name='cadastrar_pessoa'),
-    path('listar_pessoa/', PessoaListView.as_view(), name='lista_pessoas'),
-]
+urlpatterns = router.urls
